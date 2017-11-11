@@ -16,20 +16,20 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-#url-s for watching RTK channels
+#url-s for watching shqip-tv channels
 
-stream1url = 'http://stream1.rtkit.com:1935/rtk1stream/rtk1.stream/playlist.m3u8'
+stream1url = 'rtmp://66.55.93.204/livepkgr//stream?adbe-live-event=report'
 
 stream2url = 'http://stream1.rtkit.com:1935/rtk2stream/rtk2.stream/playlist.m3u8'
 
-stream3url = 'http://stream2.rtkit.com:1935/rtk3stream/rtk3.stream/playlist.m3u8'
+stream3url = ''
 
-stream4url = 'http://stream2.rtkit.com:1935/rtk4stream/rtk4.stream/playlist.m3u8'
+stream4url = ''
 
 #url-s for listening RTK radio stations
-stream1radiourl = 'http://stream1.rtkit.com:1935/radiostream/rk1.stream/playlist.m3u8'
+stream1radiourl = ''
 
-stream2radiourl = 'http://stream2.rtkit.com:1935/radiostream/rk2.stream/playlist.m3u8'
+stream2radiourl = ''
 
 #iconImages for channels and radio stations
 
@@ -52,7 +52,7 @@ addon_handle = int(sys.argv[1])
 
 xbmcplugin.setContent(addon_handle, 'videos')
 
-li = xbmcgui.ListItem('RTK1', iconImage=iconImageRtk1)
+li = xbmcgui.ListItem('Report 1', iconImage=iconImageRtk1)
 li.setProperty('IsPlayable', 'true')
 li.setInfo('videos', {'mediatype' : 'video'})
 li.setProperty('fanart_image',fanart)
@@ -60,7 +60,7 @@ li.setProperty('fanart_image',fanart)
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=stream1url, listitem=li)
 
 
-li = xbmcgui.ListItem('RTK2', iconImage=iconImageRtk2)
+li = xbmcgui.ListItem('News24', iconImage=iconImageRtk2)
 li.setProperty('IsPlayable', 'true')
 li.setInfo('videos', {'mediatype' : 'video'})
 li.setProperty('fanart_image',fanart)
