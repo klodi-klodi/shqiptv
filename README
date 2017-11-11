@@ -1,0 +1,6 @@
+echo "# afafewfsd" >> README.md
+git init
+git add https://github.com/klodi-klodi/shqiptv
+git commit -m "first commit"
+git remote add origin https://github.com/klodi-klodi/afafewfsd.git
+git push -u origin master
